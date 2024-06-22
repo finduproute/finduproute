@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: #4E1435;
+    color: #F9A826;
+}
+
+header {
+    background: #F9A826;
+    color: #4E1435;
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: bolder;
+    background: #3b0926;
+    padding: 0.5rem;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #F9A826;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    margin-bottom: 2rem; /* Add space for fixed footer */
+}
+
+h2 {
+    border-bottom: 2px solid #F9A826;
+    padding-bottom: 0.5rem;
+}
+
+.location {
+    font-size: x-large;
+    background: #6B1D49;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #F9A826;
+    color: #F9A826;
+}
+
+footer {
+    background: #F9A826;
+    color: #4E1435;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.slide-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 500px; /* Set the height of the slider */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%; /* Set the image height to fill the container */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.slide-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F9A826;
+    font-size: 2rem;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+}
